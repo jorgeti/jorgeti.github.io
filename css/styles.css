@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Strait');
+
+.home-header{
+  background-color: #E1E2E3;
+  margin: 0;
+}
+
+.hbg{
+  background-image: url(../images/01.jpg);
+  background-size: cover;
+}
+
+
+.home-logo{
+  color: #4d4d4d;
+  font-family: 'Strait';
+  font-size: 600%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  float: right;
+}
+
+@media only screen and (min-width: 420px) {
+  .home-logo{
+    font-size: 8em;
+  }
+}
+
+.home-logo a {
+  color: #e2e2e2;
+}
+
+.home-logo a:hover {
+  color: hsla(360, 0%, 0%, 0.5);
+}
+
+.home-logo .home-slogan{
+  display: block;
+  margin-top: -2.2em;
+  margin-left: 11.7em;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 0.15em;
+  text-transform: uppercase;
+  letter-spacing: 0.52em;
+}
+
+@media only screen, print {
+
+  .menu{
+    width: 80%;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .menu .menu-section{}
+
+  .menu .menu-item{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  .menu .menu-link{
+    color: white;
+    display: block;
+    margin:1.9em 1.5em;
+    padding: 0.2em;
+  }
+
+  .menu .menu-item:hover, .menu .active{
+    background-color: hsla(360, 100%, 100%, 0.5);
+  }
+}
+
+@media only screen and (max-width: 780px){
+  .menu{
+    width: 100%;
+  }
+
+  .menu .menu-item{
+    font-size: 1em;
+  }
+
+  .menu .menu-link{
+    margin:1.6em 1.2em;
+    padding: 0.2em;
+  }
+}
+
+
+/* Formulários */
+
+/* label color */
+ .page-footer .input-field label {
+   color: #323232;
+   padding:0 0 0 20px;
+ }
+
+ .page-footer .input-field label.active {
+   padding:0;
+   color: #e2e2e2;
+   -webkit-transform: translateY(-200%);
+   transform: translateY(-200%);
+ }
+ /* label focus color */
+ .page-footer .input-field input[type=text]:focus + label {
+   color: #e2e2e2;
+ }
+
+ /* label underline focus color */
+ .page-footer .input-field input,
+ .page-footer .input-field input[type=text]:focus,
+ .page-footer .input-field input[type=text].valid,
+ .page-footer .input-field input[type=text].invalid {
+   border-bottom: 0;
+   box-shadow: 0 ;
+ }
+ /* icon prefix focus color */
+ .page-footer .input-field .prefix.active {
+   color: #000;
+ }
+ .page-footer textarea, .page-footer .input-field input{
+   background-color: hsla(360, 100%, 100%, 0.5);
+ }
+ .page-footer textarea{
+   padding:20px 0 0 20px;
+   height: 250px;
+ }
